@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c01c6a34-176a-418a-9198-e85aa1be5ca6" name="logunov" url="http://loguno30.beget.tech">
+        <fileTransfer rootFolder="/home/l/loguno30/loguno30.beget.tech/public_html" accessType="SFTP" host="loguno30.beget.tech" port="22" sshConfigId="cbf911d6-3166-4aff-bad3-30b161747624" sshConfig="loguno30_django@loguno30.beget.tech:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

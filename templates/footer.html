@@ -1,0 +1,39 @@
+<footer class="footer" id="footer">
+    <form method="post" class="obrsv">
+        <h2>Остались вопросы? Закажите обратный звонок!</h2>
+        {% csrf_token %}
+        <div class="obrsv_wrapper">
+            {{ footer_form.as_p }}
+            <input type="submit" value="Отправить" name="btn2">
+        </div>
+    </form>
+    <div class="fblocks">
+        <center>
+            <div class="map">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7949114168198!2d30.27820821601358!3d59.91895098186902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630e8c71e88c1%3A0xc90c8c27461397ba!2z0JvQntCT0KPQndCe0JIg0Jgg0JrQng!5e0!3m2!1sru!2sru!4v1587579472138!5m2!1sru!2sru"
+                        width="600"
+                        height="450"
+                        frameborder="0"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                ></iframe>
+            </div>
+            <div class="fblock">
+                <img src="/static/images/metka.jpg" alt="address"/>
+                <p>СПб, ул. Мясная д. 19/21 пом. 18Н</p>
+            </div>
+            <div class="fblock">
+                <img src="/static/images/sobaka.jpg" alt="post"/>
+                <p>logunov-i-ko77@mail.ru</p>
+            </div>
+            <div class="fblock">
+                <img src="/static/images/truba.jpg" alt="call"/>
+                <a href="tel:+79219426593">+7(921)942-65-93</a>
+                <a href="tel:+79118283537">+7(911)828-35-37</a>
+            </div>
+        </center>
+    </div>
+</footer>

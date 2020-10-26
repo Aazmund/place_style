@@ -1,0 +1,400 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  padding: 20px;
+  grid-gap: 3em;
+}
+
+.menu {
+  grid-column: 1/4;
+}
+
+.hello {
+  color: white;
+  grid-column: 1/4;
+  padding-left: 10%;
+  padding-right: 45%;
+  font-size: 25pt;
+}
+
+.course_form {
+  padding-top: 35px;
+  text-align: center;
+  color: white;
+  grid-column: 1/4;
+}
+
+.form_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course_form input {
+  padding-right: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 35px;
+  font-size: 24px;
+}
+
+.course_form select {
+  padding-right: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 35px;
+  font-size: 24px;
+}
+
+.head {
+  background: url("/static/images/fonhead.jpg") center 100% no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  padding-top: 35px;
+  text-align: center;
+  background: #202429;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.intro > p {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.intro_blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  padding-right: 50px;
+}
+
+.block{
+  padding: 15px;
+}
+
+.courses > p {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.courses_block_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 25px;
+}
+
+.block_wrapper{
+  text-align: center;
+}
+
+.courses_block{
+  outline: 0px solid #202429;
+  transition: outline 0.2s linear;
+  cursor: pointer;
+}
+
+.courses_block:hover{
+  outline-width: 3px;
+}
+
+.block_wrapper img{
+  height: 150px;
+  width: 150px;
+}
+
+/* .slider__item p {
+  padding: 35px;
+  padding-left: 100px;
+  font-size: 14pt;
+  font-weight: bold;
+} */
+
+.slider_grid {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 350px;
+  background-color: rgb(242, 242, 242);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+.slide_image1 {
+  background: url("/static/images/sliderimg/farmer.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_image2 {
+  background: url("/static/images/sliderimg/home.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_image3 {
+  background: url("/static/images/sliderimg/balcksmith.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_image4 {
+  background: url("/static/images/sliderimg/foreman.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_image5 {
+  background: url("/static/images/sliderimg/antiques.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_image6 {
+  background: url("/static/images/sliderimg/stove.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_image7 {
+  background: url("/static/images/sliderimg/electrician.jpg") center no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.slide_text p {
+  font-size: 16pt;
+  padding-top: 1em;
+}
+
+.link a {
+  text-decoration: none;
+  padding-top: 10px;
+  color: #de3c39;
+}
+
+.course_name {
+  padding-top: 50px;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.price_wrapper {
+  display: flex;
+}
+
+.slide_price {
+  padding-right: 25px;
+}
+
+.price {
+  font-size: 16pt;
+  color: #de3c39;
+}
+
+.services > p {
+  font-size: 20pt;
+  text-align: center;
+}
+
+.services_p{
+  font-weight: bold;
+}
+
+.services__text {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #de3c39;
+  border-bottom: 2px solid #de3c39;
+  /* border: solid 2px #de3c39; */
+}
+
+.works > p {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.courses {
+  padding: 15px;
+}
+
+.services {
+  padding: 15px;
+}
+
+.works {
+  padding: 15px;
+  background: white;
+}
+
+.sl {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.sl__slide img {
+  height: 500px;
+}
+
+.sl__slide{
+  text-align: center;
+}
+
+
+.footer {
+  background: #202429;
+  text-align: center;
+  color: white;
+}
+
+.footer h2 {
+  padding-top: 30px;
+}
+
+.fblock {
+  display: flex;
+  justify-content: center;
+}
+
+.fblock a{
+  padding-left: 10px;
+}
+
+.obrsv_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.obrsv input {
+  padding-right: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.map iframe{
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+.fblocks {
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hello {
+    padding: 10px;
+    font-style: italic;
+  }
+
+  .course_form {
+    display: none;
+  }
+
+  .course_form input {
+    height: 35px;
+    width: 200px;
+    text-align: center;
+  }
+
+  .course_form select {
+  padding-right: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 35px;
+  font-size: 24px;
+}
+
+  .intro_blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .block {
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .intro_blocks p {
+    font-size: 16pt;
+  }
+
+  .courses_block_wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .slide_image {
+    display: none;
+  }
+
+  .slider_grid {
+    display: block;
+    height: 500px;
+  }
+
+  .course_name {
+    padding-bottom: 5px;
+  }
+
+  .slide_link {
+    padding-bottom: 5px;
+  }
+
+  .price_wrapper {
+    display: none;
+  }
+
+  .sl {
+    max-width: 450px;
+  }
+}

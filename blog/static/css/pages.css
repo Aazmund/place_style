@@ -1,0 +1,103 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  padding: 20px;
+  grid-gap: 3em;
+}
+
+.head {
+  background: url("static/images/fonhead.jpg") center 100% no-repeat;
+  background-size: cover;
+}
+
+.text{
+  font-size: 17pt;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+}
+
+.contact_info{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11pt;
+}
+
+.footer {
+  background: #202429;
+  text-align: center;
+  color: white;
+}
+
+.footer h2 {
+  padding-top: 30px;
+}
+
+.fblock {
+  display: flex;
+  justify-content: center;
+}
+
+.fblock a{
+  padding-left: 10px;
+}
+
+.obrsv_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.obrsv input {
+  padding-right: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.map iframe{
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+.fblocks {
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 20px;
+    grid-gap: 3em;
+    padding: 15px;
+  }
+
+  .text{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* .map {
+    width: 400px;
+    height: 400px;
+  } */
+}

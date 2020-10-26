@@ -1,0 +1,23 @@
+<div class="menu">
+            <ul>
+                <li><a href="{% url 'index' %}">О нас</a></li>
+                <li><a href="{% url 'blog' %}">Блог</a></li>
+                <li><a href="{% url 'index'%}#courses">Курсы ремёсел</a></li>
+{#                <li><a href="{% url 'index'%}">Курсы ремёсел</a></li>#}
+                <li>
+                    <a href="#">Услуги</a>
+                    <ul>
+                        <li><a href="{% url 'repair'%}">Ремонт</a></li>
+                        <li><a href="{% url 'index'%}#services">Строительство</a></li>
+                        <li><a href="{% url 'levkas'%}">Левкас</a></li>
+{#                        <li><a href="{% url 'repairs' %}">Ремонт</a></li>#}
+{#                        <li><a href="{% url 'building' %}">Строительство</a></li>#}
+{#                        <li><a href="{% url 'levkas' %}">Левкас</a></li>#}
+                    </ul>
+                </li>
+                <li><a href="{% url 'index'%}#works">Наши работы</a></li>
+                <li><a href="{% url 'index'%}#footer">Контакты</a></li>
+{#                <li><a href="{% url 'index#works'%}">Наши работы</a></li>#}
+{#                <li><a href="{% url 'index#footer'%}">Контакты</a></li>#}
+            </ul>
+        </div>

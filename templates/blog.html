@@ -1,0 +1,12 @@
+
+
+{% block content %}
+  {% for post in object_list %}
+      {% autoescape off%}
+          <div class="post-entry">
+              <h2><a href="">{{ post.title }}</a></h2>
+              <p>{{ post.body }}</p>
+        </div>
+      {% endautoescape %}
+  {% endfor %}
+{% endblock content %}
